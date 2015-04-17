@@ -1,0 +1,44 @@
+{
+    "name": "followbands/jsonschema-service-provider",
+    "description": "A Silex Service Provider to Validate Json Schema",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "silex",
+        "json",
+        "schema",
+        "validator",
+        "json schema",
+        "json validator",
+        "followbands"
+    ],
+    "authors": [
+        {
+            "name": "Pedro Ribeiro da Silva Neto",
+            "email": "pcelta.ribeiro@gmail.com"
+        },
+        {
+            "name": "Morilo Cardoso de Santana Junior",
+            "email": "morilojunior@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "silex/silex": "~1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "@stable",
+        "fabpot/php-cs-fixer": "@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "FollowBands\\Service\\Provider\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FollowBands\\Service\\Provider\\": "tests/"
+        }
+    }
+}
